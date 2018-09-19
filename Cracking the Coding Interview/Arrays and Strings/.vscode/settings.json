@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "utility": "cpp"
+        "utility": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
