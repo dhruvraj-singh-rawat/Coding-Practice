@@ -32,7 +32,7 @@ int main(){
     cout<<"How many elements to Insert LL: ";
     cin>>size;
 
-    head=current;
+    
     for(int i=0;i<size;i++){
         int data;
         struct node *temp;
@@ -41,20 +41,39 @@ int main(){
         temp->data=data;
         if(i==0){
             current=temp;
+            head=current;
         }
         else{
             current->next=temp;
             current=temp;
+            //cout<<current->data<<"\n\n";
         }
     }
-    cout<<"Which position from End to print: ";
-    int k,position=0;
+    int k;
+    cout<<"Enter the kth Position: ";
     cin>>k;
 
-    node *current1;
-    current1=new node;
-    current1=recurser(head->next,k,position);
-    cout<<current1->data;
+    struct node *p ,*q ;
+    p=new node;
+    q=new node;
+    p=head;
+    q=head;
+
+    for(int i=0;i<(k);i++){
+        if(p!=NULL){
+            p=p->next;
+            //cout<<"At i: "<<i<<" iteration the value of p is "<<p->data<<"\n";
+        }
+    }
+    //cout<<"Here";
+    cout<<"Position pointed by P is: "<<p->data<<"\n";
+    cout<<"Position pointed by Q is: "<<q->data<<"\n";
+    while(p!=NULL){
+        p=p->next;
+        q=q->next;
+    }
+    cout<<"\nData at kth Node from End is: "<<q->data;
+
 
 
 }
