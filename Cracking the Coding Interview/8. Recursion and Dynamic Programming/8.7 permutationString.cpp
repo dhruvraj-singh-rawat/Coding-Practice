@@ -62,15 +62,7 @@ int main(){
     
 
 
-    /*
-    for (auto itr= char_map.begin();itr!=char_map.end();itr++){
-        if(itr->first=='a'){
-            itr->second=2;
-        }
-        //cout<<itr->first<<" "<<itr->second<<endl;
-        
-    }
-    */
+
 
 
 

@@ -31,8 +31,8 @@ int main(){
     cout<<"Enter the Pattern String: ";
     cin>>a;
     
-    
-    anagram(a,b);
+    cout<<b[5];
+    //anagram(a,b);
 
 
 }

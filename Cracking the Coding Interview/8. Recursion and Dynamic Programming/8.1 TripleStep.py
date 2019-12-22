@@ -14,3 +14,5 @@ steps = int(input('Enter the Stair Case length: '))
 step_arr = [0]*steps
 
 print('The Number of the Unique Steps possible are: ',num_steps(step_arr,steps))
+
+

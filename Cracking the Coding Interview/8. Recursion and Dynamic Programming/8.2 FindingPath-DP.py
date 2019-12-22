@@ -7,7 +7,7 @@ Created on Sun Sep  8 09:34:00 2019
 """
 
 
-arr=[[0,0,0],[0,'X',0],[0,0,0],[0,0,0]]
+arr=[[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
 
 def numWays(arr):
     arr[0][0]=1 ## As it starts from this position
