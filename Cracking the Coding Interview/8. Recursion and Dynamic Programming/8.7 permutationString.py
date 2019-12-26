@@ -16,7 +16,7 @@ def recursive(sol_arr,str_map,pos,len_org):
 
     for i in range(len(str_map)):
         
-        if( str_map[list(str_map)[i]] == 0):    
+        if( str_map[list(str_map)[i]] == 0):   
                  
             continue
         
@@ -28,7 +28,7 @@ def recursive(sol_arr,str_map,pos,len_org):
 
 
 input_str='bcdd'
-sol_arr=['a']*len(input_str) 
+sol_arr=[None]*len(input_str) 
 len_org = len(input_str)
 pos=0
 recursive(sol_arr,create_map(input_str),pos,len_org)
