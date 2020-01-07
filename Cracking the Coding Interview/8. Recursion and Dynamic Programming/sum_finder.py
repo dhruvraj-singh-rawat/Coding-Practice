@@ -1,5 +1,5 @@
 def recursive(sol_arr,given_arr,pos,remaining,required):
-    
+
     if(sum(sol_arr)==required):
         print(sol_arr)        
         return
@@ -10,7 +10,6 @@ def recursive(sol_arr,given_arr,pos,remaining,required):
         return
     
     for i in range(pos,len(given_arr)):
-
         sol_arr.append(given_arr[i])
         recursive(sol_arr,given_arr,i+1,remaining-given_arr[i],required)
         sol_arr.pop()
