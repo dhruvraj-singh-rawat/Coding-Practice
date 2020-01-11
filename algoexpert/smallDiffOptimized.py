@@ -18,12 +18,21 @@ def smallestDifference(arr1,arr2):
     pos2=0
     sol=[]
 
-    while(pos1!=len(arr1)-1 or pos2!=len(arr2)-1):
+    while(pos1!=len(arr1) or pos2!=len(arr2)):
         diff = arr1[pos1]-arr2[pos2]
         #print(arr1[pos1],' ',arr2[pos2])
         #print('The value of Diff: ',diff,' and value of min: ',min_no)    
-    
-        
+
+        if(pos1==len(arr1)-1 and pos2==len(arr2)-1):
+            diff=arr1[pos1]-arr2[pos2]
+            
+            if(abs(diff)<min_no):
+                sol = append_values(arr1[pos1],arr2[pos2],sol)
+                return sol
+                
+            else:
+                return sol
+                        
         if(diff<0):
             #print('Here 1')
             if(abs(diff)<min_no):
@@ -59,10 +68,10 @@ def smallestDifference(arr1,arr2):
             else:
                 pos2+=1
     
-    return sol
+    
 
 
-arr1= [-1,5,10,20,28,3]
-arr2 = [26,134,135,15,17]
+arr1= [-2,21]
+arr2 = [0,20]
 
 print(smallestDifference(arr1,arr2))
