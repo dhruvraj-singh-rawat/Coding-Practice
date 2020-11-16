@@ -12,7 +12,5 @@ def permutationHelper(array,currentPermutation,permutations):
 		for i in range(len(array)):
 			currArray = array[ :i ] + array[ i + 1 : ]
 			newPermutation = currentPermutation + [array[i]]	
-
-
 			permutationHelper(currArray,newPermutation,permutations)
 	
